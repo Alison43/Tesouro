@@ -52,16 +52,13 @@ const caminhoilhas = {
 const textoIlha = document.querySelector('.textotroca');
 let nomeIlha = textoIlha.innerText;
 
-for(let i = 0; i > arrayIlha.length; i++){
+for(let i = 0; i < arrayIlha.length; i++){
     if (nomeIlha === arrayIlha[i]) {
-        
         console.log(nomeIlha);
     } else {
         console.log("deu ruim");
     }
 }
-
-console.log(textoIlha.innerText);
 
 
 // Object.keys(caminhoilhas).forEach(ilha => {
