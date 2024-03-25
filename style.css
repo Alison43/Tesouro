@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellota Text', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 1;
+    background-color: white;
+}
+
+.linha{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    margin-top: 75px;
+}
+
+a{
+    font-weight: 800;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.caminho{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.logoA{
+    font-size: 40px;
+}
+
+.itens{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 10vw;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.parte1{
+    padding-top: 70px;
+    height: 47vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.parte11{
+    text-align: center;
+    font-family: 'Roboto';
+    align-items: center;
+    width: 50vw;
+    margin-right: 5vw;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.linha2{
+    height: 75%;
+    width: 1px;
+    background-color: black;
+    justify-self: flex-end;
+    margin-right: 4vw;
+}
+
+.imgp2{
+    height: 16vw;
+    width: 32vw;
+    margin-right: 4vw;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.parte2{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imgp3{
+    height: 16vw;
+    width: 38vw;
+    margin-left: 4vw;
+}
+
+.parte2{
+    height: 47vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.parte22{
+    text-align: center;
+    font-family: 'Roboto';
+    align-items: center;
+    width: 40vw;
+    margin-left: 10vw;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.imgp4{
+    height: 10vw;
+    width: 32vw;
+    margin-right: 4vw;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.jogo{
+    padding-top: 90px;
+}
+
+.tela{
+    height: 40vw;
+    border: 1px black solid;
+    width: 97%;
+    margin-left: 25px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.partejogavel{
+    display: flex;
+    align-items: center;
+}
+
+.teladica{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 10px 10px 10px 10px; 
+    border: 1px black solid;
+    margin: 20px;
+}
+
+.tela{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dicas{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.trocailha{
+    height: 10vw;
+    width: 25vw;
+}
+
+.ilhaescolha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escolhas{
+    display: flex;
+}
+
+.escolha1{
+    height: 3.5vw;
+    width: 25vw;
+    border-radius: 10px 10px 10px 10px; 
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complemento{
+    width: 10vw;
+}
+
+.textotroca{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 60px;
+}
+
+
+.escolha2{
+    height: 3.5vw;
+    width: 25vw;
+    border-radius: 10px 10px 10px 10px; 
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.telamapa{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 10px 10px 10px 10px; 
+    border: 1px black solid;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resto{
+    height: 2500px;
+}
