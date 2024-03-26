@@ -39,10 +39,19 @@ function algo(event) {
             // atribui as ilhas a tag <p>
             escolha1.innerText = caminhoilhas[i][1]
             escolha2.innerText = caminhoilhas[i][2]
+
+            // Alterar imagem
+            let imagem = document.querySelector('.trocailha');
+
+            const arrayImagens = ["Imagens/Ilha dos Piratas.png", "Imagens/Ilha dos Mortos.png", "Imagens/Ilha do Tesouro.png", "Imagens/Baía do Naufrágio.png", "Imagens/Enseada dos Contrabandistas.png", "Imagens/Ilha dos Amotinas.png", "Imagens/Morro do Mosquete.png"]
+            imagem.setAttribute('src', arrayImagens[i]);
         }
+        
     }
 }
 
 escolhas.forEach((item) => {
     item.addEventListener('click', algo);
 });
+
+
