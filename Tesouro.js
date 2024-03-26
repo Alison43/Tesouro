@@ -4,10 +4,12 @@ let escolha2 = document.querySelector('.escolha2');
 const escolhas = document.querySelectorAll('.escolhas div[class^="escolha"]');
 const titulo = document.querySelector('.textotroca');
 const pergunta = document.querySelector('#pergunta');
+const cadeado = document.querySelector('.complemento p')
 
 // Inicializando variáveis
 let a = 0;
 let confirmacao = false;
+
 
 // Função para capturar a resposta do usuário
 function capturarValor() {
@@ -17,6 +19,9 @@ function capturarValor() {
         confirmacao = true;
     }
     resposta.value = "";
+    if(confirmacao === true) {
+        cadeado.innerText = '✅';
+    }
 }
 
 // Arrays de informações sobre as ilhas
@@ -35,7 +40,6 @@ const caminhoilhas = [
 function algo(event, i = 0) {
     if(confirmacao === true){
         let ilha = event.currentTarget.innerText;
-        console.log(ilha);
         titulo.innerText = ilha;
         let nomeIlha = ilha;
         
@@ -53,6 +57,9 @@ function algo(event, i = 0) {
 
             a = i;
             confirmacao = false;
+            if(confirmacao === false) {
+                cadeado.innerText = '❌';
+            } 
         }
 
         // Incrementando o índice para avançar para a próxima ilha

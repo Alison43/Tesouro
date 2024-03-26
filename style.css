@@ -228,6 +228,13 @@ a{
 
 .complemento{
     width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complemento p {
+    margin: 0;
 }
 
 .textotroca{
