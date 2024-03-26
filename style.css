@@ -17,6 +17,16 @@ html{
     background-color: white;
 }
 
+.modelo1{
+    display: flex;
+    cursor: pointer;
+}
+
+.modelo2{
+    display: flex;
+    cursor: pointer;
+}
+
 .linha{
     height: 1px;
     width: 100%;
