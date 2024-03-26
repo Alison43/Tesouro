@@ -159,6 +159,7 @@ a{
 .partejogavel{
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .teladica{
@@ -167,6 +168,22 @@ a{
     border-radius: 10px 10px 10px 10px; 
     border: 1px black solid;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputenviar{
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.btnenviar{
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px 5px 5px 5px; 
+    margin-bottom: 5px;
 }
 
 .tela{
@@ -175,8 +192,13 @@ a{
 }
 
 .dicas{
-    margin: 10px;
+    margin: 0;
     font-size: 25px;
+}
+
+.Denigmas{
+    width: 97%;
+    margin: 0;
 }
 
 .trocailha{
