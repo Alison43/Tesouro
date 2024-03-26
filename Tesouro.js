@@ -1,24 +1,26 @@
+// Selecionando elementos HTML
 let escolha1 = document.querySelector('.escolha1');
 let escolha2 = document.querySelector('.escolha2');
 const escolhas = document.querySelectorAll('.escolhas div[class^="escolha"]');
-const titulo = document.querySelector('.textotroca')
-let a = 0;
+const titulo = document.querySelector('.textotroca');
 const pergunta = document.querySelector('#pergunta');
 
+// Inicializando variáveis
+let a = 0;
+let confirmacao = false;
+
+// Função para capturar a resposta do usuário
 function capturarValor() {
     let resposta = document.querySelector('#resposta');
-    let respostaUsuario = resposta.value
-    console.log(respostaUsuario)
+    let respostaUsuario = resposta.value;
     if(respostaUsuario === arrayResposta[a]){
-        confirmacao = true
+        confirmacao = true;
     }
     resposta.value = "";
-    console.log(a)
 }
 
-const arrayIlha = ["Ilha dos Piratas", "Ilha dos Mortos", "Ilha do Tesouro", "Baía do Naufrágio", "Enseada dos Contrabandistas", "Ilha dos Amotinas", "Morro do Mosquete"]
-// console.log(arrayIlha[1])
-
+// Arrays de informações sobre as ilhas
+const arrayIlha = ["Ilha dos Piratas", "Ilha dos Mortos", "Ilha do Tesouro", "Baía do Naufrágio", "Enseada dos Contrabandistas", "Ilha dos Amotinas", "Morro do Mosquete"];
 const caminhoilhas = [
     [0 ,arrayIlha[3], arrayIlha[6]],
     [1 ,arrayIlha[6], arrayIlha[3]],
@@ -26,48 +28,49 @@ const caminhoilhas = [
     [3, arrayIlha[6], arrayIlha[1]],
     [4, arrayIlha[6], arrayIlha[2]],
     [5, arrayIlha[4], arrayIlha[1]],
-    [6, arrayIlha[0], arrayIlha[5]],
-]
-// console.log(caminhoilhas.ilhaa1);
+    [6, arrayIlha[0], arrayIlha[5]]
+];
 
-const textoIlha = document.querySelector('.textotroca');
-
-let confirmacao = false;
-
-function algo(event) {
+// Função para manipular a interação do usuário com as ilhas (agora recursiva)
+function algo(event, i = 0) {
     if(confirmacao === true){
-        let ilha = event.currentTarget.innerText
-        console.log(ilha)
-        titulo.innerText = ilha
+        let ilha = event.currentTarget.innerText;
+        console.log(ilha);
+        titulo.innerText = ilha;
         let nomeIlha = ilha;
-        // percorre as ilhas
-        for(let i = 0; i < arrayIlha.length; i++){
-            // verifica se a ilha é a mesma definicia na tag
-            if (nomeIlha === arrayIlha[i]) {
-                // atribui as ilhas a tag <p>
-                escolha1.innerText = caminhoilhas[i][1]
-                escolha2.innerText = caminhoilhas[i][2]
+        
+        // Verificando se a ilha é a mesma definida na tag
+        if (nomeIlha === arrayIlha[i]) {
+            // Atribuindo as ilhas à tag <p>
+            escolha1.innerText = caminhoilhas[i][1];
+            escolha2.innerText = caminhoilhas[i][2];
+            pergunta.innerText = arrayPerguntas[i];
 
-                pergunta.innerText = arrayPerguntas[i];
-    
-                // Alterar imagem
-                let imagem = document.querySelector('.trocailha');
-    
-                const arrayImagens = ["Imagens/Ilha dos Piratas.png", "Imagens/Ilha dos Mortos.png", "Imagens/Ilha do Tesouro.png", "Imagens/Baía do Naufrágio.png", "Imagens/Enseada dos Contrabandistas.png", "Imagens/Ilha dos Amotinas.png", "Imagens/Morro do Mosquete.png"]
-                imagem.setAttribute('src', arrayImagens[i]);
+            // Alterando imagem
+            let imagem = document.querySelector('.trocailha');
+            const arrayImagens = ["Imagens/Ilha dos Piratas.png", "Imagens/Ilha dos Mortos.png", "Imagens/Ilha do Tesouro.png", "Imagens/Baía do Naufrágio.png", "Imagens/Enseada dos Contrabandistas.png", "Imagens/Ilha dos Amotinas.png", "Imagens/Morro do Mosquete.png"];
+            imagem.setAttribute('src', arrayImagens[i]);
 
-                a = i;
-                confirmacao = false;
+            a = i;
+            confirmacao = false;
+        }
 
-            }
+        // Incrementando o índice para avançar para a próxima ilha
+        i++;
+
+        // Se ainda houver ilhas para percorrer, chamamos a função novamente
+        if (i < arrayIlha.length) {
+            algo(event, i);
         }
     }
 }
 
+
+// Adicionando evento de clique para cada escolha
 escolhas.forEach((item) => {
     item.addEventListener('click', algo);
 });
 
+// Arrays de perguntas e respostas
 const arrayPerguntas = ['Qual a cor da laranja?', 'Qual a cor da uva?', 'Você ganhou', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?'];
-
 const arrayResposta = ['laranja', 'laranja', '', 'laranja', 'laranja', 'laranja', 'laranja'];
