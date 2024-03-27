@@ -11,6 +11,14 @@ let a = 0;
 let confirmacao = false;
 
 
+function enviarFormulario(event) {
+    // Verifica se a tecla pressionada é "Enter" (código 13)
+    if (event.keyCode === 13) {
+        // Chama a função capturarValor() quando "Enter" é pressionado
+        capturarValor();
+    }
+}
+
 // Função para capturar a resposta do usuário
 function capturarValor() {
     let resposta = document.querySelector('#resposta');
