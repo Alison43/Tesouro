@@ -23,7 +23,7 @@ function enviarFormulario(event) {
 function capturarValor() {
     let resposta = document.querySelector('#resposta');
     let respostaUsuario = resposta.value.toLowerCase();
-    if(respostaUsuario === arrayResposta[a]){
+    if(respostaUsuario.includes(arrayResposta[a])) {
         confirmacao = true;
     }
     resposta.value = "";
