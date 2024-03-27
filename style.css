@@ -304,3 +304,36 @@ a{
 .Aluno p{
     align-items: center;
 }
+
+.cfTexto{
+    width: 98vw;
+    display: flex;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textocf{
+    width: 50%;
+}
+
+.cfph{
+    margin-right: 40px;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+}
+
+.cfTexto img{
+    height: 40%;
+    width: 40%;
+}
+
+.red{
+    color: red;
+    text-decoration: underline;
+}
+

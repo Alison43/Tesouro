@@ -44,7 +44,17 @@ const caminhoilhas = [
     [6, arrayIlha[0], arrayIlha[5]]
 ];
 
-// Função para manipular a interação do usuário com as ilhas (agora recursiva)
+// Alterando imagem
+let imagem = document.querySelector('.trocailha');
+const arrayImagens = [  "Imagens/Ilha dos Piratas.png", 
+                        "Imagens/Ilha dos Mortos.png", 
+                        "Imagens/Ilha do Tesouro.png", 
+                        "Imagens/Baía do Naufrágio.png", 
+                        "Imagens/Enseada dos Contrabandistas.png", 
+                        "Imagens/Ilha dos Amotinas.png", 
+                        "Imagens/Morro do Mosquete.png"];
+
+// Função para manipular a interação do usuário com as ilhas (Recursiva)
 function algo(event, i = 0) {
     if(confirmacao === true){
         let ilha = event.currentTarget.innerText;
@@ -58,9 +68,7 @@ function algo(event, i = 0) {
             escolha2.innerText = caminhoilhas[i][2];
             pergunta.innerText = arrayPerguntas[i];
 
-            // Alterando imagem
-            let imagem = document.querySelector('.trocailha');
-            const arrayImagens = ["Imagens/Ilha dos Piratas.png", "Imagens/Ilha dos Mortos.png", "Imagens/Ilha do Tesouro.png", "Imagens/Baía do Naufrágio.png", "Imagens/Enseada dos Contrabandistas.png", "Imagens/Ilha dos Amotinas.png", "Imagens/Morro do Mosquete.png"];
+    
             imagem.setAttribute('src', arrayImagens[i]);
 
             a = i;
