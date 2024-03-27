@@ -14,7 +14,7 @@ let confirmacao = false;
 // Função para capturar a resposta do usuário
 function capturarValor() {
     let resposta = document.querySelector('#resposta');
-    let respostaUsuario = resposta.value;
+    let respostaUsuario = resposta.value.toLowerCase();
     if(respostaUsuario === arrayResposta[a]){
         confirmacao = true;
     }
@@ -81,3 +81,6 @@ escolhas.forEach((item) => {
 // Arrays de perguntas e respostas
 const arrayPerguntas = ['Qual a cor da laranja?', 'Qual a cor da uva?', 'Você ganhou', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?'];
 const arrayResposta = ['laranja', 'laranja', '', 'laranja', 'laranja', 'laranja', 'laranja'];
+
+
+console.log("DaVi".toLowerCase());
