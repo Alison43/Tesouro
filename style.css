@@ -1,14 +1,14 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Bellota Text', Arial, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.navbar{
+.navbar {
     display: flex;
     height: 75px;
     width: 100%;
@@ -17,17 +17,13 @@ html{
     background-color: white;
 }
 
-.modelo1{
+.modelo1,
+.modelo2 {
     display: flex;
     cursor: pointer;
 }
 
-.modelo2{
-    display: flex;
-    cursor: pointer;
-}
-
-.linha{
+.linha {
     height: 1px;
     width: 100%;
     background-color: black;
@@ -35,31 +31,30 @@ html{
     margin-top: 75px;
 }
 
-a{
+a {
     font-weight: 800;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------*/
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.caminho{
+.caminho {
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-.logoA{
+.logoA {
     font-size: 40px;
 }
 
-.itens{
+.itens {
     display: flex;
     align-items: center;
     flex: 1;
@@ -67,17 +62,33 @@ a{
     margin-right: 10vw;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------*/
 
-.parte1{
+.parte2,
+.parte3 {
     padding-top: 70px;
     height: 47vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.parte11{
+.parte1{
+    padding-top: 150px;
+    height: 47vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parte3 img{
+    height: 12vw;
+    width: 32vw;
+    margin-right: 4vw;
+}
+
+.parte11,
+.parte22 {
     text-align: center;
     font-family: 'Roboto';
     align-items: center;
@@ -88,7 +99,7 @@ a{
     line-height: 35px;
 }
 
-.linha2{
+.linha2 {
     height: 75%;
     width: 1px;
     background-color: black;
@@ -96,75 +107,38 @@ a{
     margin-right: 4vw;
 }
 
-.imgp2{
+.imgp2,
+.imgp3,
+.imgp4 {
     height: 16vw;
     width: 32vw;
     margin-right: 4vw;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------*/
 
-.parte2{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.imgp3{
-    height: 16vw;
-    width: 38vw;
-    margin-left: 4vw;
-}
-
-.parte2{
-    height: 47vh;
-    display: flex;
-    align-items: center;
-    
-}
-
-.parte22{
-    text-align: center;
-    font-family: 'Roboto';
-    align-items: center;
-    width: 40vw;
-    margin-left: 10vw;
-    font-size: 15px;
-    letter-spacing: 2px;
-    line-height: 35px;
-}
-
-.imgp4{
-    height: 10vw;
-    width: 32vw;
-    margin-right: 4vw;
-}
-
-/*---------------------------------------------------------------------------------------------------------*/
-
-.jogo{
+.jogo {
     padding-top: 90px;
 }
 
-.tela{
+.tela {
     height: 40vw;
     border: 1px black solid;
     width: 97%;
     margin-left: 25px;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------*/
 
-.partejogavel{
+.partejogavel {
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-.teladica{
+.teladica {
     width: 15vw;
-    border-radius: 10px 10px 10px 10px; 
+    border-radius: 10px;
     border: 1px black solid;
     margin: 20px;
     max-width: 100%;
@@ -174,65 +148,66 @@ a{
     justify-content: space-evenly;
 }
 
-.inputenviar{
+.inputenviar {
     width: 70%;
-    margin-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.btnenviar{
+.btnenviar {
     background-color: white;
     border: 1px black solid;
-    border-radius: 5px 5px 5px 5px; 
+    border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.tela{
+.tela {
     display: flex;
     justify-content: space-between;
+    display: none;
 }
 
-.dicas{
+.dicas {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
 }
 
-.Denigmas{
+.Denigmas {
     width: 97%;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
 }
 
-.trocailha{
+.trocailha {
     height: 10vw;
     width: 25vw;
 }
 
-.ilhaescolha{
+.ilhaescolha {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.escolhas{
+.escolhas {
     display: flex;
 }
 
-.escolha1{
+.escolha1,
+.escolha2 {
     height: 3.5vw;
     width: 25vw;
-    border-radius: 10px 10px 10px 10px; 
+    border-radius: 10px;
     border: 1px black solid;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.complemento{
+.complemento {
     width: 10vw;
     display: flex;
     align-items: center;
@@ -243,7 +218,7 @@ a{
     margin: 0;
 }
 
-.textotroca{
+.textotroca {
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 4px;
@@ -252,22 +227,10 @@ a{
     padding: 60px;
 }
 
-
-.escolha2{
-    height: 3.5vw;
-    width: 25vw;
-    border-radius: 10px 10px 10px 10px; 
-    border: 1px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.telamapa{
+.telamapa {
     height: 5vw;
     width: 5vw;
-    border-radius: 10px 10px 10px 10px; 
+    border-radius: 10px;
     border: 1px black solid;
     margin: 20px;
     display: flex;
@@ -275,11 +238,11 @@ a{
     justify-content: center;
 }
 
-.resto{
+.resto {
     height: 250px;
 }
 
-.Rodape{
+.Rodape {
     border-top: 1px black solid;
     width: 100%;
     background-color: rgb(238, 171, 47);
@@ -289,23 +252,23 @@ a{
     align-items: center;
 }
 
-.Aluno img{
+.Aluno img {
     height: 30vh;
     width: 30vh;
     border: 1px black solid;
 }
 
-.Aluno{
+.Aluno {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Aluno p{
+.Aluno p {
     align-items: center;
 }
 
-.cfTexto{
+.cfTexto {
     width: 98vw;
     display: flex;
     font-family: 'Roboto';
@@ -317,23 +280,52 @@ a{
     align-items: center;
 }
 
-.textocf{
+.textocf {
     width: 50%;
 }
 
-.cfph{
+.cfph {
     margin-right: 40px;
     margin-bottom: 50px;
     font-family: 'Roboto';
 }
 
-.cfTexto img{
+.cfTexto img {
     height: 40%;
     width: 40%;
 }
 
-.red{
+.red {
     color: red;
     text-decoration: underline;
 }
 
+/* Tela do display none */
+
+
+.dnone{
+    height: 40vw;
+    border: 1px black solid;
+    width: 97%;
+    margin-left: 25px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dnone{
+    display: none;
+}
+
+.tela{
+    display: none;
+}
+.dnone p{
+    font-size: 30px;
+}
+
+.dnone img{
+    height: 12vw;
+    width: 32vw;
+}
