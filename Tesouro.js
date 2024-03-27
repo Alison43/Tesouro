@@ -46,13 +46,13 @@ const caminhoilhas = [
 
 // Alterando imagem
 let imagem = document.querySelector('.trocailha');
-const arrayImagens = [  "Imagens/Ilha dos Piratas.png", 
-                        "Imagens/Ilha dos Mortos.png", 
-                        "Imagens/Ilha do Tesouro.png", 
-                        "Imagens/Baía do Naufrágio.png", 
-                        "Imagens/Enseada dos Contrabandistas.png", 
-                        "Imagens/Ilha dos Amotinas.png", 
-                        "Imagens/Morro do Mosquete.png"];
+const arrayImagens = [  "Imagens/Ilha dos Piratas.png", //0
+                        "Imagens/Ilha dos Mortos.png", //1
+                        "Imagens/Ilha do Tesouro.png", //2
+                        "Imagens/Baía do Naufrágio.png", //3
+                        "Imagens/Enseada dos Contrabandistas.png", //4
+                        "Imagens/Ilha dos Amotinas.png", //5
+                        "Imagens/Morro do Mosquete.png"];//6
 
 // Função para manipular a interação do usuário com as ilhas (Recursiva)
 function algo(event, i = 0) {
@@ -95,5 +95,5 @@ escolhas.forEach((item) => {
 });
 
 // Arrays de perguntas e respostas
-const arrayPerguntas = ['Qual a cor da laranja?', 'Qual a cor da uva?', 'Você ganhou', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?', 'Qual a cor da uva?'];
-const arrayResposta = ['laranja', 'laranja', '', 'laranja', 'laranja', 'laranja', 'laranja'];
+const arrayPerguntas = ['Qual a cor da laranja?', 'Qual é a primeira coisa que um homem coloca em sua esposa quando se casam?', 'O que passa pela mão da mulhar mole, e depois fica duro?', 'Por que o kuririn não gosta de IPhone ?', 'Qual o computador mais comunista que existe?', 'Por que a Inglaterra não pode jogar xadrez?','O que tem 50 pernas mais não anda?'];
+const arrayResposta = ['laranja', 'O anel.', 'esmalte', 'android', 'pc do b.', 'rainha', '25 cadeirantes',];
