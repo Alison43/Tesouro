@@ -165,7 +165,6 @@ a {
 .tela {
     display: flex;
     justify-content: space-between;
-    display: none;
 }
 
 .dicas {
@@ -308,19 +307,12 @@ a {
     border: 1px black solid;
     width: 97%;
     margin-left: 25px; 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.dnone{
-    display: none;
-}
-
-.tela{
-    display: none;
-}
 .dnone p{
     font-size: 30px;
 }
