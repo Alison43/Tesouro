@@ -11,12 +11,13 @@ O objetivo do Mapa do Tesouro é guiar os aventureiros em uma jornada através d
 O código JavaScript cria uma experiência interativa em uma página da web, permitindo aos usuários explorar e interagir com ilhas fictícias. Ele começa selecionando elementos HTML relevantes usando document.querySelector() e inicializa variáveis como um contador e uma flag de confirmação para verificar a resposta do usuário. Duas funções de manipulação de eventos, enviarFormulario() e capturarValor(), processam as respostas do usuário, sendo a primeira acionada pela tecla Enter. Os dados das ilhas são representados por dois arrays: arrayIlha para os nomes das ilhas e caminhoilhas para suas conexões. A função algo() atualiza dinamicamente o conteúdo da página conforme o usuário seleciona uma ilha, e eventos de clique são adicionados a cada opção de escolha usando um loop forEach(). Dois arrays, arrayPerguntas e arrayResposta, armazenam perguntas e respostas correspondentes. Em suma, o código demonstra técnicas para manipular o DOM e responder às interações do usuário, destacando o uso do JavaScript para criar experiências envolventes em navegadores web.
 ### Conclusão:
 O Mapa do Tesouro oferece uma jornada repleta de desafios intelectuais e emocionais. Somente os mais astutos e perseverantes serão capazes de desvendar os segredos das ilhas e alcançar o tão cobiçado tesouro. Que a busca pelo conhecimento e pela aventura guie os passos dos destemidos exploradores rumo ao seu destino final.
-### Referência
+### Referência 
 
 Este conteúdo é derivado do projeto CSunplugged Classic desenvolvido por Tim Bell, Ian H. Witten e Mike Fellows da University of Canterbury, Nova Zelândia, e disponibilizado sob licença Creative Commons BY-NC-SA 4.0. 
 
 Para acessar o site, visite:
 
-[Desplugada - Atividades](https://desplugada.ime.unicamp.br/atividades.html)
+[Desplugada - Atividade 11](https://desplugada.ime.unicamp.br/atividade11/index.html)
+
 
 
