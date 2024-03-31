@@ -15,7 +15,7 @@ O Mapa do Tesouro oferece uma jornada repleta de desafios intelectuais e emocion
 
 O projeto CSunplugged Classic está disponível em:
 
-[CSunplugged Classic](https://csunplugged.org/en/classic/)
+https://classic.csunplugged.org/
 
 Desenvolvido por Tim Bell, Ian H. Witten e Mike Fellows da University of Canterbury, Nova Zelândia.
 
