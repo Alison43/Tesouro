@@ -14,7 +14,7 @@ O Mapa do Tesouro oferece uma jornada repleta de desafios intelectuais e emocion
 ### Referência 
 O site é derivado do projeto CSunplugged Classic está disponível em:
 
-(https://csunplugged.org/en/classic/)
+CSunplugged Classic
 
 Desenvolvido por Tim Bell, Ian H. Witten e Mike Fellows da University of Canterbury, Nova Zelândia.
 
