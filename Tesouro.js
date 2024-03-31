@@ -116,6 +116,6 @@ escolhas.forEach((item) => {
 });
 
 // Arrays de perguntas e respostas
-const arrayPerguntas = ['Qual a cor da laranja?', 'Qual é a primeira coisa que um homem coloca em sua esposa quando se casam?', 'O que passa pela mão da mulhar mole, e depois fica duro?', 'Por que o kuririn não gosta de IPhone ?', 'Qual o computador mais comunista que existe?', 'Por que a Inglaterra não pode jogar xadrez?','O que tem 50 pernas mais não anda?'];
+const arrayPerguntas = ['Qual a cor da laranja?', 'Qual é a primeira coisa que um homem coloca em sua esposa quando se casam?', 'O que passa pela mão da mulher mole, e depois fica duro?', 'Por que o kuririn não gosta de IPhone ?', 'Qual o computador mais comunista que existe?', 'Por que a Inglaterra não pode jogar xadrez?','O que tem 50 pernas mais não anda?'];
 
 const arrayResposta = ['laranja', 'O anel', 'esmalte', 'android', 'pc do b', 'rainha', '25 cadeirantes'];
