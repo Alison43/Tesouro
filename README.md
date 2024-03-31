@@ -12,9 +12,9 @@ O código JavaScript cria uma experiência interativa em uma página da web, per
 ### Conclusão:
 O Mapa do Tesouro oferece uma jornada repleta de desafios intelectuais e emocionais. Somente os mais astutos e perseverantes serão capazes de desvendar os segredos das ilhas e alcançar o tão cobiçado tesouro. Que a busca pelo conhecimento e pela aventura guie os passos dos destemidos exploradores rumo ao seu destino final.
 ### Referência 
-O projeto CSunplugged Classic está disponível em:
+O site é derivado do projeto CSunplugged Classic está disponível em:
 
-[CSunplugged Classic](https://csunplugged.org/en/classic/)
+(https://csunplugged.org/en/classic/)
 
 Desenvolvido por Tim Bell, Ian H. Witten e Mike Fellows da University of Canterbury, Nova Zelândia.
 
