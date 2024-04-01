@@ -13,8 +13,6 @@ let Percorrido = [" -"];
 
 Percorrido.push("Ilha dos Piratas");
 
-
-
 // Inicializando variáveis
 let a = 0;
 let confirmacao = false;
