@@ -4,7 +4,14 @@ let escolha2 = document.querySelector('.escolha2');
 const escolhas = document.querySelectorAll('.escolhas div[class^="escolha"]');
 const titulo = document.querySelector('.textotroca');
 const pergunta = document.querySelector('#pergunta');
-const cadeado = document.querySelector('.complemento p')
+const cadeado = document.querySelector('.complemento p');
+let CaminhoPercorrido = document.querySelector('.dp1');
+let CaminhoPercorrido2 = document.querySelector('.dp2');
+let CaminhoPercorrido3 = document.querySelector('.dp3');
+
+let Percorrido = [" -"];
+
+Percorrido.push("Ilha dos Piratas");
 
 // Inicializando variáveis
 let a = 0;
@@ -38,6 +45,26 @@ function capturarValor() {
     }
 }
 
+
+function Relatorio() {
+    const Rnone = document.querySelector('.dnone4');
+    Rnone.style.display = "flex"
+    for(i = 1 ; i < Percorrido.length; i++){
+        if(i == 1){
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + i + Percorrido[0];
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + Percorrido[i];
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + '\n';
+        }else{
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + i + Percorrido[0];
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + Percorrido[i];
+            CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + '\n';
+        }
+    }
+    document.getElementById("desaparecer").disabled = true;
+}
+
+
+
 // Arrays de informações sobre as ilhas
 const arrayIlha = ["Ilha dos Piratas", "Ilha dos Mortos", "Ilha do Tesouro", "Baía do Naufrágio", "Enseada dos Contrabandistas", "Ilha dos Amotinas", "Morro do Mosquete"];
 const caminhoilhas = [
@@ -66,23 +93,24 @@ function algo(event, i = 0) {
         let ilha = event.currentTarget.innerText;
         titulo.innerText = ilha;
         let nomeIlha = ilha;
-
         
+        
+
         // Verificando se a ilha é a mesma definida na tag
         if (nomeIlha === arrayIlha[i]) {
-
             // Atribuindo as ilhas à tag <p>
             if (nomeIlha === 'Ilha do Tesouro') {
                 titulo.innerText = "Baleia"
                 escolha1.innerText = "Caminho Esquerdo";
                 escolha2.innerText = "Caminho Direito";
                 pergunta.innerText = arrayPerguntas[i];
+                Percorrido.push("Baleia");
             }else{
                 escolha1.innerText = caminhoilhas[i][1];
                 escolha2.innerText = caminhoilhas[i][2];
                 pergunta.innerText = arrayPerguntas[i];
+                Percorrido.push(nomeIlha);
             }
-
 
             imagem.setAttribute('src', arrayImagens[i]);
 
@@ -98,6 +126,14 @@ function algo(event, i = 0) {
             const tela2 = document.querySelector('.dnone');
             tela1.style.display = "none"
             tela2.style.display = "flex"
+
+            if(nomeIlha == "Caminho Direito" && Percorrido[Percorrido.length - 1] != "Caminho Direito"){
+                Percorrido.push("Caminho Direito");
+            }
+            if(nomeIlha == "Caminho Esquerdo" && Percorrido[Percorrido.length - 1] != "Caminho Esquerdo"){
+                Percorrido.push("Caminho Esquerdo");
+            }
+            
         }
     }
     
@@ -118,4 +154,4 @@ escolhas.forEach((item) => {
 // Arrays de perguntas e respostas
 const arrayPerguntas = ['Qual a cor da laranja?', 'Qual é a primeira coisa que um homem coloca em sua esposa quando se casam?', 'O que passa pela mão da mulher mole, e depois fica duro?', 'Por que o kuririn não gosta de IPhone ?', 'Qual o computador mais comunista que existe?', 'Por que a Inglaterra não pode jogar xadrez?','O que tem 50 pernas mais não anda?'];
 
-const arrayResposta = ['laranja', 'O anel', 'esmalte', 'android', 'pc do b', 'rainha', '25 cadeirantes'];
+const arrayResposta = ['laranja', 'anel', 'esmalte', 'android', 'pc do b', 'rainha', '25 cadeirantes'];

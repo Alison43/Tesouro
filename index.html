@@ -23,23 +23,23 @@
 
         <div class="itens">
             <div class="comojogar">
-                <a class="iten" href="#ponto1">Introdução</a>
+                <a class="iten" href="#Introducao">Introdução</a>
             </div>
             <div class="jogar">
-                <a class="iten" href="#jogo">Jogar</a>
+                <a class="iten" href="#Jogar">Jogar</a>
             </div>
             <div class="comofunciona">
-                <a class="iten" href="#idcm">Como Funciona</a>
+                <a class="iten" href="#Como-Funciona">Como Funciona</a>
             </div>
             <div class="integrantes">
-                <a class="iten" href="#final">Integrantes</a>
+                <a class="iten" href="#Informacoes">Informações</a>
             </div>
         </div>
         
     </div>
 
     <div class="linha" ></div>
-    <div id="ponto1"></div>
+    <div id="Introducao"></div>
     <div class="parte1">
         
         <div class="parte11">
@@ -88,7 +88,7 @@
         <img class="imgp4" src="Imagens/Ilha do Tesouro.png" alt="">
     </div>
 
-    <div class="jogo" id="jogo"></div>
+    <div class="jogo" id="Jogar"></div>
     <div class="tela">
         <div class="dica">
             <div class="teladica">
@@ -123,11 +123,23 @@
     </div>
     
     <div class="dnone">
-        <p>O verdadeiro tesouro são os amigos que você faz pelo caminho!🤝🙏🥰😎😑🍷</p>
-        <img src="/Imagens/Ilha do Tesouro.png" alt="">
+        <div class="dnone1">
+            <p>O verdadeiro tesouro são os amigos que você faz pelo caminho!🤝🙏🥰😎😑🍷</p>
+        </div>
+        <div class="dnone2">
+            <div class="dnone3">
+                <img src="Imagens/Ilha do Tesouro.png" alt="">
+                <button id="desaparecer" class="Percorrido" onclick="Relatorio()">
+                    <p>Caminho Percorrido</p>
+                </button>
+            </div>
+            <div class="dnone4">
+                <p class="dp1"></p>
+            </div>
+        </div>
     </div>
 
-    <div id="idcm"></div>
+    <div id="Como-Funciona"></div>
     <div class="cfTexto">
         <div class="textocf">
             <h1 class="cfph">Como Funciona:</h1>
@@ -147,30 +159,37 @@
                 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em resumo, o código JavaScript fornece um exemplo básico de como criar uma experiência interativa em uma página da web. Ele demonstra técnicas para manipular o DOM e responder às interações do usuário, mostrando como o JavaScript pode ser usado para criar aplicativos dinâmicos e envolventes em um navegador web.</p>
         </div>
-        <img src="/Imagens/code.png" alt="">
+        <img src="Imagens/code.png" alt="">
     </div>
 
-    <footer id="final" class="Rodape">
-        <div class="Aluno">
-            <p>Alison Leal</p>
-            <img src="/Alunos/1.jpg" alt="">
-            
+    <footer id="Informacoes" class="Rodape">
+        <div class="p1">
+            <div class="rbp">
+                <p>Este conteúdo é derivado do projeto CSunplugged Classic desenvolvido por Tim Bell, Ian H. Witten e Mike Fellows da University of Canterbury, Nova Zelândia, e disponibilizado sob licença Creative Commons BY-NC-SA 4.0.</p>
+                <p>Para acessar o site, visite: <a href="https://desplugada.ime.unicamp.br/atividade11/index.html" target="_blank">Desplugada - Atividade 11</a></p>
+                
+            </div>
         </div>
-        <div class="Aluno">
-            <p>Breno Nogueira</p>
-            <img src="/Alunos/foto-breno.jpg" alt="">
+        <div class="p2">
+            <h3>Alunos :</h3>
+            <div class="Aluno">
+                <p> Alison Leal</p>
             
+            </div>
+            <div class="Aluno">
+                <p> Breno Nogueira</p>
+                
+            </div>
+            <div class="Aluno">
+                <p> Davi Alves</p>
+                
+            </div>
+            <div class="Aluno">
+                <p> Eduardo Alencar</p>
+            </div>
         </div>
-        <div class="Aluno">
-            <p>Davi Alves</p>
-            <img src="/Alunos/Perfil_edited.jpg" alt="">
-            
-        </div>
-        <div class="Aluno">
-            <p>Eduardo Alencar</p>
-            <img src="/Alunos/foto-eduardo.jpg" alt="">
-            
-        </div>
+        
+        
     </footer>
 
     <script src="Tesouro.js"></script>
