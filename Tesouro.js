@@ -45,24 +45,33 @@ function capturarValor() {
     }
 }
 
-
+// Função para exibir um relatório do caminho percorrido pelo jogador
 function Relatorio() {
+    // Seleciona o elemento HTML com a classe 'dnone4' e o armazena em Rnone
     const Rnone = document.querySelector('.dnone4');
-    Rnone.style.display = "flex"
+    // Torna o elemento selecionado visível alterando seu estilo para "flex"
+    Rnone.style.display = "flex";
+
+    // Itera sobre o array Percorrido para exibir o relatório do caminho percorrido
     for(i = 1 ; i < Percorrido.length; i++){
+        // Verifica se é a primeira iteração do loop
         if(i == 1){
+            // Se for a primeira iteração, adiciona o número da ilha e o nome da ilha ao elemento CaminhoPercorrido
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + i + Percorrido[0];
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + Percorrido[i];
+            // Adiciona uma quebra de linha ao final do texto
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + '\n';
-        }else{
+        } else {
+            // Se não for a primeira iteração, adiciona o número da ilha e o nome da ilha ao elemento CaminhoPercorrido
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + i + Percorrido[0];
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + Percorrido[i];
+            // Adiciona uma quebra de linha ao final do texto
             CaminhoPercorrido.innerText = CaminhoPercorrido.innerText + '\n';
         }
     }
+    // Desativa o botão com o ID "desaparecer"
     document.getElementById("desaparecer").disabled = true;
 }
-
 
 
 // Arrays de informações sobre as ilhas
