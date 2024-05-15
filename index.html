@@ -14,103 +14,108 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <div class="caminho">
+    <div class="BarraDeNavegacao">
+        <div class="Logo">
+            <div class="Caminho">
                 <a class="logoA" href="#">Tesouro</a>
             </div>
         </div>
 
-        <div class="itens">
-            <div class="comojogar">
-                <a class="iten" href="#Introducao">Introdução</a>
+        <div class="Itens">
+            <div class="ComoJogar">
+                <a class="Iten" href="#Introducao">Introdução</a>
             </div>
-            <div class="jogar">
-                <a class="iten" href="#Jogar">Jogar</a>
+            <div class="Jogar">
+                <a class="Iten" href="#Jogar">Jogar</a>
             </div>
-            <div class="comofunciona">
-                <a class="iten" href="#Como-Funciona">Como Funciona</a>
+            <div class="ComoFunciona">
+                <a class="Iten" href="#Como-Funciona">Como Funciona</a>
             </div>
-            <div class="integrantes">
-                <a class="iten" href="#Informacoes">Informações</a>
+            <div class="Integrantes">
+                <a class="Iten" href="#Informacoes">Informações</a>
             </div>
         </div>
         
     </div>
 
-    <div class="linha" ></div>
-    <div id="Introducao"></div>
-    <div class="parte1">
-        
-        <div class="parte11">
-            <div class="texto1">
-                <h1>Objetivo</h1>
-            </div>
-            <div class="texto12">
-                <p>Seu objetivo é encontrar a lendária Ilha do Tesouro. Neste intrigante jogo de estratégia, você se aventurará por um arquipélago repleto de ilhas misteriosas e navios piratas amigáveis que navegam por rotas fixas entre elas.</p>
-            </div>
-        </div>
-        
-        <div class="linha2"></div>
+    <div class="Linha" ></div>
 
-        <img class="imgp2" src="Imagens/Ilha dos Piratas.png" alt="">
+    <div class="Alinhamento"></div>
+    <div id="Introducao">
+
+        <div class="DivisaoIntroducao">
+        
+            <div class="Conteudo">
+                <div class="Texto1">
+                    <h1>Objetivo</h1>
+                </div>
+                <div class="Texto2">
+                    <p>Seu objetivo é encontrar a lendária Ilha do Tesouro. Neste intrigante jogo de estratégia, você se aventurará por um arquipélago repleto de ilhas misteriosas e navios piratas amigáveis que navegam por rotas fixas entre elas.</p>
+                </div>
+            </div>
+
+            <div class="Linha2"></div>
+
+            <img class="Imagem" src="Imagens/Ilha dos Piratas.png" alt="">
+        </div>
+
+        <div class="DivisaoIntroducao">
+
+            <img class="Imagem" src="Imagens/Enseada dos Contrabandistas.png" alt="">
+
+            <div class="Conteudo">
+                <div class="Texto1">
+                    <h1>Sobre as Ilhas</h1>
+                </div>
+                <div class="Texto2">
+                    <p>Cada ilha que você visitar terá dois navios de partida, designados como A e B. A escolha entre esses navios determinará seu próximo destino. No entanto, os piratas que habitam estas ilhas não possuem um mapa completo das rotas disponíveis.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="DivisaoIntroducao">
+            
+            <div class="Conteudo">
+                <div class="Texto1">
+                    <h1>Senha e Enigmas?</h1>
+                </div>
+                <div class="Texto2">
+                    <p>Além disso, ao longo da jornada, você encontrará enigmas desafiadores que poderão revelar pistas cruciais para desvendar o mistério que envolve a Ilha do Tesouro. Esteja preparado para usar seu intelecto e habilidades de decifração para superar os desafios que encontrar pelo caminho. Boa sorte, a aventura aguarda!</p>
+                </div>
+            </div>
+
+            <div class="Linha2"></div>
+
+            <img class="Imagem" src="Imagens/Ilha do Tesouro.png" alt="">
+        </div>
     </div>
+    
 
-    <div class="parte2">
-
-        <img class="imgp3" src="Imagens/Enseada dos Contrabandistas.png" alt="">
-
-        <div class="parte22">
-            <div class="texto2">
-                <h1>Sobre as Ilhas</h1>
-            </div>
-            <div class="texto22">
-                <p>Cada ilha que você visitar terá dois navios de partida, designados como A e B. A escolha entre esses navios determinará seu próximo destino. No entanto, os piratas que habitam estas ilhas não possuem um mapa completo das rotas disponíveis.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="parte3">
-        
-        <div class="parte11">
-            <div class="texto1">
-                <h1>Senha e Enigmas?</h1>
-            </div>
-            <div class="texto12">
-                <p>Além disso, ao longo da jornada, você encontrará enigmas desafiadores que poderão revelar pistas cruciais para desvendar o mistério que envolve a Ilha do Tesouro. Esteja preparado para usar seu intelecto e habilidades de decifração para superar os desafios que encontrar pelo caminho. Boa sorte, a aventura aguarda!</p>
-            </div>
-        </div>
-        
-        <div class="linha2"></div>
-
-        <img class="imgp4" src="Imagens/Ilha do Tesouro.png" alt="">
-    </div>
-
-    <div class="jogo" id="Jogar"></div>
-    <div class="tela">
-        <div class="dica">
-            <div class="teladica">
-                <p class="dicas">Enigma:</p>
-                <p class="Denigmas" id="pergunta">Qual a cor da laranja?</p>
-                <input class="inputenviar" type="text" id="resposta" onkeyup="enviarFormulario(event)">
-                <button class="btnenviar" onclick="capturarValor()">Responder</button>
+    <div class="Jogo" id="Jogar"></div>
+    <div class="Tela">
+        <div>
+            <div class="TelaDica">
+                <p class="Dicas">Enigma:</p>
+                <p class="Enigmas" id="Pergunta">Qual a cor da laranja?</p>
+                <input class="InputEnviar" type="text" id="resposta" onkeyup="enviarFormulario(event)">
+                <button class="BtnEnviar" onclick="capturarValor()">Responder</button>
             </div>
         </div>
 
-        <div class="partejogavel">
-            <div class="ilhaescolha">
-                <img class="trocailha" src="Imagens/Ilha dos Piratas.png" alt="">
-                <p class="textotroca">Ilha dos Piratas</p>
+        <div class="ParteJogavel">
+            <div class="EscolhaIlha">
+                <img class="TrocaIlha" src="Imagens/Ilha dos Piratas.png" alt="">
+                <p class="TextoTroca">Ilha dos Piratas</p>
                 <div class="escolhas">
-                    <div id="op1" class="modelo1">
+                    <div id="op1" class="Modelo">
                         <div class="escolha1">
                             Baía do Naufrágio
                         </div>
                     </div>
-                    <div class="complemento"><p>❌</p></div>
-                    <div class="modelo2">
+                    <div class="Passe"><p>❌</p></div>
+                    <div class="Modelo">
                         <div class="escolha2">
                         Morro do Mosquete
                     </div>
@@ -122,18 +127,18 @@
 
     </div>
     
-    <div class="dnone">
-        <div class="dnone1">
+    <div class="DisplayEscondido">
+        <div class="DE1">
             <p>O verdadeiro tesouro são os amigos que você faz pelo caminho!🤝🙏🥰😎😑🍷</p>
         </div>
-        <div class="dnone2">
-            <div class="dnone3">
+        <div class="DE2">
+            <div class="DE3">
                 <img src="Imagens/Ilha do Tesouro.png" alt="">
                 <button id="desaparecer" class="Percorrido" onclick="Relatorio()">
                     <p>Caminho Percorrido</p>
                 </button>
             </div>
-            <div class="dnone4">
+            <div class="DE4">
                 <p class="dp1"></p>
             </div>
         </div>

@@ -8,27 +8,32 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbar {
+.BarraDeNavegacao {
     display: flex;
     height: 75px;
     width: 100%;
     position: fixed;
-    top: 1;
     background-color: white;
 }
 
-.modelo1,
-.modelo2 {
+.Alinhamento{
+    height: 75px;
+    background-color: white;
+    width: 100%;
+}
+
+.Modelo {
     display: flex;
     cursor: pointer;
 }
 
-.linha {
+.Linha {
     height: 1px;
     width: 100%;
     background-color: black;
     position: fixed;
     margin-top: 75px;
+    
 }
 
 a {
@@ -40,103 +45,86 @@ a {
 
 /*-------------------------------------*/
 
-.logo {
+.Logo {
     display: flex;
     align-items: center;
 }
 
-.caminho {
-    padding-left: 10vw;
-    padding-right: 10vw;
+.Caminho {
+    padding-inline: 7vw;
 }
 
 .logoA {
     font-size: 40px;
 }
 
-.itens {
+.Itens {
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: space-between;
-    margin-right: 10vw;
+    margin-inline: 10vw;
 }
 
 /*-------------------------------------*/
 
-.parte2,
-.parte3 {
-    padding-top: 70px;
-    height: 47vh;
+.DivisaoIntroducao{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-inline: 5vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.parte1{
-    padding-top: 150px;
-    height: 47vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.parte3 img{
-    height: 12vw;
-    width: 32vw;
-    margin-right: 4vw;
-}
-
-.parte11,
-.parte22 {
+.Conteudo {
     text-align: center;
     font-family: 'Roboto';
     align-items: center;
-    width: 50vw;
-    margin-right: 5vw;
+    width: 70vw;
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 35px;
 }
 
-.linha2 {
-    height: 75%;
+.Imagem {
+    height: 25vh;
+    width: 75vh;
+}
+
+.Linha2 {
+    height: 50vh;
     width: 1px;
     background-color: black;
     justify-self: flex-end;
-    margin-right: 4vw;
-}
-
-.imgp2,
-.imgp3,
-.imgp4 {
-    height: 16vw;
-    width: 32vw;
-    margin-right: 4vw;
+    margin-inline: 5vw;
 }
 
 /*-------------------------------------*/
 
-.jogo {
+.Jogo {
     padding-top: 90px;
 }
 
-.tela {
+.Tela {
+    display: flex;
+    justify-content: space-between;
     height: 40vw;
     border: 1px black solid;
-    width: 97%;
-    margin-left: 25px;
+    width: fill;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /*-------------------------------------*/
 
-.partejogavel {
+.ParteJogavel {
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-.teladica {
+.TelaDica {
     width: 15vw;
     border-radius: 10px;
     border: 1px black solid;
@@ -148,13 +136,13 @@ a {
     justify-content: space-evenly;
 }
 
-.inputenviar {
+.InputEnviar {
     width: 70%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.btnenviar {
+.BtnEnviar {
     background-color: white;
     border: 1px black solid;
     border-radius: 5px;
@@ -162,30 +150,25 @@ a {
     margin-bottom: 10px;
 }
 
-.tela {
-    display: flex;
-    justify-content: space-between;
-}
-
-.dicas {
+.Dicas {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
 }
 
-.Denigmas {
+.Enigmas {
     width: 97%;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
 }
 
-.trocailha {
+.TrocaIlha {
     height: 10vw;
     width: 25vw;
 }
 
-.ilhaescolha {
+.EscolhaIlha {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,20 +189,20 @@ a {
     justify-content: center;
 }
 
-.complemento {
+.Passe {
     width: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.complemento p {
+.Passe p {
     margin: 0;
 }
 
-.textotroca {
+.TextoTroca {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vw;
     letter-spacing: 4px;
     margin: 0;
     margin-bottom: 0;
@@ -263,12 +246,6 @@ a {
 
 .p2 p{
     padding-left: 40px;
-}
-
-.Aluno img {
-    height: 30vh;
-    width: 30vh;
-    border: 1px black solid;
 }
 
 .Aluno {
@@ -318,7 +295,7 @@ a {
 /* Tela do display none */
 
 
-.dnone{
+.DisplayEscondido{
     height: 40vw;
     border: 1px black solid;
     width: 97%;
@@ -329,12 +306,12 @@ a {
     flex-direction: column;
 }
 
-.dnone p{
+.DisplayEscondido p{
     font-size: 30px;
     margin: 0;
 }
 
-.dnone img{
+.DisplayEscondido img{
     height: 10vw;
     width: 30vw;
 }
@@ -350,30 +327,30 @@ a {
     background-color: white;
 }
 
-.dnone2 p{
+.DE2 p{
     margin: 0;
     padding: 15px;
     font-size: 15px;
     letter-spacing: 2px;
 }
 
-.dnone2{
+.DE2{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.dnone3{
+.DE3{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.dnone3 img{
+.DE3 img{
     padding: 40px;
 }
 
-.dnone4{
+.DE4{
     display: none;
     border: 1px black solid;
     flex: 1;
@@ -381,8 +358,68 @@ a {
     margin-top: 20px;
 }
 
-.dnone4 p{
+.DE4 p{
     margin: 0;
     padding: 10px;
     font-size: 15px;
+}
+
+@media (max-width: 750px){
+    .Itens {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .BarraDeNavegacao {
+        height: 50px;
+    }
+    
+    .Linha {
+        margin-top: 50px;
+    }
+    
+    /*-------------------------------------*/
+
+    .logoA {
+        font-size: 20px;
+    }
+    
+    /*-------------------------------------*/
+
+    .DivisaoIntroducao{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        width: fill;
+        height: 30vh;
+        display: flex;
+    }
+    
+    .Conteudo {
+        text-align: center;
+        font-family: 'Roboto';
+        align-items: center;
+        width: fill;
+        margin-right: 5vw;
+        font-weight: 400;
+        font-size: 1.5vh;
+        line-height: 20px;
+    }
+    
+    
+    .Linha2 {
+        height: 75%;
+        width: 1px;
+        background-color: black;
+        justify-self: flex-end;
+        margin-right: 4vw;
+    }
+
+    .Imagem {
+        height: 20vw;
+        width: 40vw;
+    }
+    
+    /*-------------------------------------*/
+
 }

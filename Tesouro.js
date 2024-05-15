@@ -2,9 +2,9 @@
 let escolha1 = document.querySelector('.escolha1');
 let escolha2 = document.querySelector('.escolha2');
 const escolhas = document.querySelectorAll('.escolhas div[class^="escolha"]');
-const titulo = document.querySelector('.textotroca');
-const pergunta = document.querySelector('#pergunta');
-const cadeado = document.querySelector('.complemento p');
+const titulo = document.querySelector('.TextoTroca');
+const pergunta = document.querySelector('#Pergunta');
+const cadeado = document.querySelector('.Passe p');
 let CaminhoPercorrido = document.querySelector('.dp1');
 let CaminhoPercorrido2 = document.querySelector('.dp2');
 let CaminhoPercorrido3 = document.querySelector('.dp3');
@@ -48,7 +48,7 @@ function capturarValor() {
 // Função para exibir um relatório do caminho percorrido pelo jogador
 function Relatorio() {
     // Seleciona o elemento HTML com a classe 'dnone4' e o armazena em Rnone
-    const Rnone = document.querySelector('.dnone4');
+    const Rnone = document.querySelector('.DE4');
     // Torna o elemento selecionado visível alterando seu estilo para "flex"
     Rnone.style.display = "flex";
 
@@ -87,7 +87,7 @@ const caminhoilhas = [
 ];
 
 // Alterando imagem
-let imagem = document.querySelector('.trocailha');
+let imagem = document.querySelector('.TrocaIlha');
 const arrayImagens = [  "Imagens/Ilha dos Piratas.png", //0
                         "Imagens/Ilha dos Mortos.png", //1
                         "Imagens/Baleia.png", //2
@@ -131,8 +131,8 @@ function algo(event, i = 0) {
         }
 
         if(nomeIlha === "Caminho Direito" || nomeIlha === 'Caminho Esquerdo') {
-            const tela1 = document.querySelector('.tela');
-            const tela2 = document.querySelector('.dnone');
+            const tela1 = document.querySelector('.Tela');
+            const tela2 = document.querySelector('.DisplayEscondido');
             tela1.style.display = "none"
             tela2.style.display = "flex"
 
