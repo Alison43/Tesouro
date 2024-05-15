@@ -186,6 +186,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5vw;
 }
 
 .Passe {
@@ -277,8 +278,6 @@ a {
 }
 
 .cfph {
-    margin-right: 40px;
-    margin-bottom: 50px;
     font-family: 'Roboto';
 }
 
@@ -296,14 +295,18 @@ a {
 
 
 .DisplayEscondido{
-    height: 40vw;
     border: 1px black solid;
-    width: 97%;
-    margin-left: 25px; 
+    width: fill;
+    margin-inline: 15px; 
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+
+.DE1 p{
+    text-align: center;
 }
 
 .DisplayEscondido p{
@@ -334,7 +337,12 @@ a {
     letter-spacing: 2px;
 }
 
+.DE1{
+    padding-top: 20px;
+}
+
 .DE2{
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -369,6 +377,8 @@ a {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        font-size: 2.5vw;
+        text-align: center;
     }
 
     .cfTexto img{
@@ -376,8 +386,8 @@ a {
     }
 
     .textocf{
-        padding: 10%;
-        width: 70%;
+        padding: 5%;
+        width: 80%;
     }
 
 }
@@ -555,6 +565,49 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .DisplayEscondido{
+        flex-direction: column;
+    }
+
+    .DE1 p{
+        font-size: 3vw;
+    }
+
+    .DE3 img{
+        padding: 15px;
+    }
+
+    .Percorrido{
+        display: flex;
+        justify-content: center;
+        height: 4vw;
+        width: 35vw;
+        align-items: center;
+        margin: 0;
+    }
+
+    .Percorrido p{
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    .DE2{
+        flex-direction: column;
+    }
+
+    .DE4{
+        display: none;
+        border: 1px black solid;
+        flex: 1;
+        width: 30vw;
+    }
+    
+    .DE4 p{
+        margin: 0;
+        padding: 1vw;
+        font-size: 1.75vw;
     }
 
     .p2{
