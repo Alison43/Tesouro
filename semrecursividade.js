@@ -1,5 +1,5 @@
 // Função para manipular a interação do usuário com as ilhas
-function algo(event) {
+function ManipularIteracao(event) {
     if(confirmacao === true){
         let ilha = event.currentTarget.innerText;
         titulo.innerText = ilha;

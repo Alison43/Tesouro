@@ -97,7 +97,7 @@ const arrayImagens = [  "Imagens/Ilha dos Piratas.png", //0
                         "Imagens/Morro do Mosquete.png"];//6
 
 // Função para manipular a interação do usuário com as ilhas (Recursiva)
-function algo(event, i = 0) {
+function ManipularIteracao(event, i = 0) {
     if(confirmacao === true){
         let ilha = event.currentTarget.innerText;
         titulo.innerText = ilha;
@@ -151,13 +151,13 @@ function algo(event, i = 0) {
 
         // Se ainda houver ilhas para percorrer, chamamos a função novamente
         if (i < arrayIlha.length) {
-            algo(event, i);
+            ManipularIteracao(event, i);
         }
 }
 
 // Adicionando evento de clique para cada escolha
 escolhas.forEach((item) => {
-    item.addEventListener('click', algo);
+    item.addEventListener('click', ManipularIteracao);
 });
 
 // Arrays de perguntas e respostas
